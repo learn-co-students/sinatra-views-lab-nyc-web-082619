@@ -1,7 +1,8 @@
-ENV['SINATRA_ENV'] ||= "development"
-ENV['RACK_ENV'] ||= "development"
+ENV["SINATRA_ENV"] ||= "development"
+ENV["RACK_ENV"] ||= "development"
 
-require 'bundler/setup'
-Bundler.require(:default, ENV['SINATRA_ENV'])
+require "bundler/setup"
+Bundler.require(:default, ENV["SINATRA_ENV"])
 
-require './app'
+require "./app"
+require_all "./models"
